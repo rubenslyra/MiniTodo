@@ -1,10 +1,10 @@
 namespace MiniTodo.Models;
 
 public record Todo(
-    int Id,
+    Guid Id,
     string Title,
     bool IsCompleted,
     DateTime CreatedAt,
     DateTime? UpdatedAt = null,
-    DateTime? DeletedAt = null    
+    DateTime? DeletedAt = null
 );
